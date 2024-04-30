@@ -21,13 +21,15 @@ install Flask  -3.0.3
 ---------------------------------------
 for update database table using migration Migration
 
-set FLASK_APP = app.py
+set FLASK_APP = app.py - window 
 
-flask db init
+export FLASK_APP = app.py -linux
 
-flask db migrate -m "comment"
+flask db init -> set up the migration directory
 
-flask db upgrade
+flask db migrate -m "comment" -> set up the migration file , you will be seeing migration folder after running this command
+
+flask db upgrade -> update the database with the migration
 
 
 RUN APP 
